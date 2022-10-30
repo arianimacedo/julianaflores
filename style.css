@@ -2,7 +2,7 @@
 
 * { box-sizing: border-box; }
 
-*{
+* {
 margin: 0;
 padding: 0;
 }
@@ -25,8 +25,7 @@ a { text-decoration: none;
 } 
 
 h1 {
-    background-color: black;
-    
+    background-color: black;    
 }
 
 h1 img {
@@ -45,7 +44,7 @@ nav {
 }
 
 nav a {    
-    font-size: 20px;
+    font-size: 15px;
     color: #cef5de;
     padding: 10px;
     transition: 500ms;
@@ -57,58 +56,57 @@ nav a:hover, nav a:focus {
 
 main {
     background-color: #dff3e8d3;
-    width: 80vw; 
+    width: 90vw; 
     margin: auto; 
     margin-top: 0px;
     margin-bottom: 15px;
-    padding: 30px; 
-    border-radius: 10px 10px 10px 10px;
+    padding: 15px; 
+    border-radius: 5px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.253);
 }
 
 .destaque {
     background-image: url(imagens/destaque.jpg);
-    height: 600px;
-    color: whitesmoke;
+    height: 250px;
+    color: #c5ebd6;
     text-align: center;
-        
-    background-size: cover;
+
+    background-size: cover; 
+    background-position: center left;
+    background-repeat: no-repeat;      
+
     display: flex;
-    justify-content: center;    
-    align-items: center;    
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     align-content: center;
 }
 
 .destaque h2 {
-    font-size: 52px;
-    font-family:'Merienda', cursive;
-    padding-bottom: 150px;
+    font-size: 28px;
+    font-family:'Merienda', cursive;    
+    padding-bottom: 10px;
 
     animation-name: aparecer;
     animation-duration: 2s;
 }
 
 .destaque p {
-    font-size: 42px;
+    font-size: 16px;
+    font-weight: bold;
     font-family: 'Merienda', cursive;
-    
+
+    padding-bottom: 120px;
+
     animation-name: aparecer;
-    animation-duration: 1.5s;
-    animation-delay: 1.5s;
+    animation-duration: 2s;
+    animation-delay: 2s;
     animation-fill-mode: backwards;
- }
+}
 
 @keyframes aparecer {
     from { opacity: 0; }
-    to { opacity: 1;}
-}
-
-hr {
-    border-radius: 30px;
-    color: green;
-    margin-bottom: 30px;
-    box-shadow:  rgba(24, 26, 25, 0.041) 0 0 5px 5px;
+    to { opacity: 1; }
 }
 
 .instagram {
@@ -120,75 +118,70 @@ hr {
     text-align: center;
 }
 
+hr {
+    border-radius: 30px;
+    color: rgba(0, 128, 0, 0.418);
+    margin-bottom: 30px;
+    box-shadow:  rgba(24, 26, 25, 0.041) 0 0 5px 5px;
+}
+
 h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-figure img {
+.trabalho img {
+    height: 250px;
+    width: 210px;
+    margin: auto;
+    display: block;
+
     transform: scale(0.8);
     transition: 500ms;
     box-shadow:  rgba(24, 26, 25, 0.068) 0 0 10px 10px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
-figure img:hover {
+.trabalho figure img:hover {
     transform: scale(0.9)    
 }
 
-figure {
-    padding-left: 80px;
-    margin: auto;
-    display: block;
-}
-       
-
-.whatsapp {
-    height: 100px;
-    width: 100px;
+.faleconosco {
+    height: 80px;
+    width: 80px;
     display: block;
     margin: 0px auto;
     margin-top: 10px;
-    text-align: center;    
-    
+    text-align: center;   
 }
 
-footer {
-    height: 100px;
-    background-color: black;
-    color: whitesmoke;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
 .sobre {
-    height: 450px;
-    width: 600px;    
+    height: 213px;
+    width: 320px;    
     display: block;
     margin: 0px auto;
     margin-top: 10px;
     margin-bottom: 15px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.253);
-    }
+}
 
 .paragrafo {
-    font-size: 22px;
+    text-indent: 10%;
+    font-size: 18px;
     text-align: justify;
 }
 
 aside {
-    font-size: 18px;
+    font-size: 16px;
     text-align: end;
 }
 
 form {
-    width: 70%;
+    width: 100%;
     margin: auto;
-    padding: 16px;
+    padding: 30px;
 }
 
 #nome, #email,#telefone, #assunto, #mensagem {
@@ -196,6 +189,7 @@ form {
     border: none;
     height: 30px;
     box-shadow: rgb(0, 128, 117) 0 0 3px;
+    margin-bottom: 5px;
 }
 
 #mensagem {height: auto;}
@@ -213,386 +207,151 @@ button:hover, button:focus {
     background-color: rgb(0, 128, 117);
 }
 
-
-
-
-
-
-
-    
-@media screen and (max-width: 820px) {
-
-    .destaque {
-
-    height: 320px;
-    color: whitesmoke;
+.produtos {
+    font-size: 18px;
     text-align: center;
-            
-    background-size: cover;
+    margin: 20px;
+}
+
+.imagens {
     display: flex;
-    justify-content: center;    
-    align-items: center;    
     flex-wrap: wrap;
-    align-content: center;
+    justify-content: space-evenly;   
+    gap: 4vw;
+    padding: 0 2vw;
 }
 
-    .destaque h2 {
-        font-size: 32px;
-        font-family:'Merienda', cursive;
-        padding-bottom: 20px;
-    }
-    
-    .destaque p {
-        font-size: 22px;
-        font-family: 'Merienda', cursive;
-  
-    }
-    h2 {
-        text-align: center;
-        font-size: 22px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+.itens {
+    width: 180px;
+    height: 180px;
+    margin: 30px;     
+}
 
-    .instagram {
-        width: 150px;
-        height: 150px;
-        display: block;
-        margin: 0px auto;
-        margin-top: 10px;
-        text-align: center;
-    }
+.itens img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
 
-    figure {
-        margin: auto;
-        display: inline-block;
-    }
+footer {
+    height: 100px;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
 
-    .whatsapp {
-        height: 100px;
-        width: 100px;
-        display: block;
-        margin: 0px auto;
-        margin-top: 10px;
-        text-align: center;    
+.rodape {
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+
+nav a { font-size: 18px; }
         
-    }
+.destaque { height: 400px; }
 
-    .sobre {
-        height: 213px;
-        width: 320px;    
-        display: block;
-        margin: 0px auto;
-        margin-top: 15px;
-        margin-bottom: 20px;
-        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.253);
-        }
-    
-    .paragrafo {
-        text-indent: 10%;
-        font-size: 18px;
-        text-align: justify
-    }
-    
-    aside {
-        font-size: 12px;
-        text-align: end;
-    }
+.destaque h2 {  font-size: 52px; }
 
-    form {
-        width: 100%;
-        margin: auto;
-        padding: 50px;
-    }
+.destaque p { font-size: 32px; }
     
+.trabalho img {
+    display: inline-block;
+        
+    height: 280px;
+    width: 248px;
+    margin: 20px;
+}
+
+.trabalho figure {        
+    text-align: center;
+}
 
 }
 
 
+@media screen and (min-width: 1000px) {
 
-@media screen and (max-width: 470px) {
-
-    nav a {    
-        font-size: 15px;
-        color: #cef5de;
-        padding: 10px;
-        transition: 500ms;    
-    }
-
-    .destaque {
-        background-image: url(imagens/destaque.jpg);
-        height: 350px;
-     
-        color: whitesmoke;
-        text-align: center;
-            
-        background-size: cover;
+header {
         display: flex;
-        justify-content: center;    
-        align-items: center;    
-        flex-wrap: wrap;
-        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        height: 140px;
+        background-color: black;  
     }
 
-    .destaque h2 {
-        font-size: 22px;
-        font-family:'Merienda', cursive;
-        padding-bottom: 10px;
-    }
-    
-    .destaque p {
-        font-size: 16px;
-        font-family: 'Merienda', cursive;
-    }
-    
 
-    h2 {
-        text-align: center;
-        font-size: 18px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+h1 img {
+    width: 120px;
+    height: 120px;    
+    margin: 10px 0px 10px 5vw;  
+}
 
-    .instagram {
-        width: 80px;
-        height: 80px;
-        display: block;
-        margin: 0px auto;
-        margin-top: 10px;
-        text-align: center;
-    }
+nav {
+    margin-right: 5vw;
+}
 
-    figure {
-        padding: 30px;
-        margin: auto;
-        display: inline-block;
-    }
+nav a {    
+    font-size: 18px;
+    padding: 10px;
+    margin: 30px;
 
-    .whatsapp {
-        height: 50px;
-        width: 50px;
-        display: block;
-        margin: 0px auto;
-        margin-top: 10px;
-        text-align: center;    
-        
-    }
+}
 
-    .sobre {
-        height: 142px;
-        width: 213px;    
-        display: block;
-        margin: 0px auto;
-        margin-top: 15px;
-        margin-bottom: 20px;
-        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.253);
-        }
-    
-    .paragrafo {
-        text-indent: 10%;
-        font-size: 18px;
-        text-align: justify
-    }
-    
-    aside {
-        font-size: 12px;
-        text-align: end;
-    }
-
-    form {
-        width: 100%;
-        margin: auto;
-        padding: 3px;
-    }
+main {
+    margin-top: 20px
 }
 
 
-
-/* @media screen and (min-width: 471px) {
-
-    nav a {    
-        font-size: 15px;
-        color: #cef5de;
-        padding: 10px;
-        transition: 500ms;    
-    }
-
-    .destaque {
-        background-image: url(imagens/destaque.jpg);
-        height: 350px;
-     
-        color: whitesmoke;
-        text-align: center;
-            
-        background-size: cover;
-        display: flex;
-        justify-content: center;    
-        align-items: center;    
-        flex-wrap: wrap;
-        align-content: center;
-    }
-
-    .destaque h2 {
-        font-size: 28px;
-        font-family:'Merienda', cursive;
-        padding-bottom: 10px;
-    }
-    
-    .destaque p {
-        font-size: 18px;
-        font-family: 'Merienda', cursive;
-    }
-    
-
-    h2 {
-        text-align: center;
-        font-size: 18px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-
-    .instagram {
-        width: 80px;
-        height: 80px;
-        display: block;
-        margin: 0px auto;
-        margin-top: 10px;
-        text-align: center;
-    }
-
-    figure {
-        padding: 30px;
-        margin: auto;
-        display: inline-block;
-    }
-
-    .whatsapp {
-        height: 50px;
-        width: 50px;
-        display: block;
-        margin: 0px auto;
-        margin-top: 10px;
-        text-align: center;    
+.trabalho img {
+    display: inline-block;
         
-    }
-
-    .sobre {
-        height: 142px;
-        width: 213px;    
-        display: block;
-        margin: 0px auto;
-        margin-top: 15px;
-        margin-bottom: 20px;
-        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.253);
-        }
-    
-    .paragrafo {
-        text-indent: 10%;
-        font-size: 18px;
-        text-align: justify
-    }
-    
-    aside {
-        font-size: 12px;
-        text-align: end;
-    }
-
-    form {
-        width: 100%;
-        margin: auto;
-        padding: 3px;
-    }
+    height: 450px;
+    width: 390px;
 }
- */
 
+.trabalho figure {        
+    text-align: center;
+}
 
-
-
-
-/* @media screen and (min-width: 800px) {
-
-    .destaque {
-
-        height: 320px;
-        color: whitesmoke;
-        text-align: center;
-                
-        background-size: cover;
-        display: flex;
-        justify-content: center;    
-        align-items: center;    
-        flex-wrap: wrap;
-        align-content: center;
-    }
+.sobre {
+    height: 326px;
+    width: 540px; 
+}
     
-    .destaque h2 {
-        font-size: 32px;
-        font-family:'Merienda', cursive;
-        padding-bottom: 20px;
-    }
-        
-    .destaque p {
-        font-size: 22px;
-        font-family: 'Merienda', cursive;
-      
-    }
+}
 
-    h2 {
-        text-align: center;
-        font-size: 22px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    
-    .instagram {
-        width: 150px;
-        height: 150px;
-        display: block;
-        margin: 0px auto;
-        margin-top: 10px;
-        text-align: center;
-    }
-    
-    figure {
-        margin: auto;
-        display: inline-block;
-        align-items: flex-end;
-        }
-    
-    .whatsapp {
-        height: 100px;
-        width: 100px;
-        display: block;
-        margin: 0px auto;
-        margin-top: 10px;
-        text-align: center;    
+
+@media screen and (min-width: 1300px) {
+
+h2 { font-size: 32px; }
+
+.trabalho img {     
             
-        }
+    height: 550px;
+    width: 490px;
+}
     
-    .sobre {
-        height: 213px;
-        width: 320px;    
-        display: block;
-        margin: 0px auto;
-        margin-top: 15px;
-        margin-bottom: 20px;
-        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.253);
-            }
-        
-    .paragrafo {
-        text-indent: 10%;
-        font-size: 18px;
-        text-align: justify
-        }
-        
-    aside {
-        font-size: 12px;
-        text-align: end;
-        }
+.itens {
+        width: 280px;
+        height: 280px;     
+}
+
+.sobre {
+    height: 326px;
+    width: 540px; 
+}
+
+form { width: 80%; }
+
+}
+
     
-    form {
-        width: 100%;
-        margin: auto;
-        padding: 50px;
-        }
-        
-    
-    }
-    
-     */
+
+
+
