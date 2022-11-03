@@ -110,8 +110,8 @@ main {
 }
 
 .siga {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     display: block;
     margin: 0px auto;
     margin-top: 10px;
@@ -140,7 +140,6 @@ h2 {
     transform: scale(0.8);
     transition: 500ms;
     box-shadow:  rgba(24, 26, 25, 0.068) 0 0 10px 10px;
-    border-radius: 5px;
 }
 
 .trabalho figure img:hover {
@@ -168,6 +167,12 @@ h2 {
 }
 
 .paragrafo {
+    text-indent: 10%;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.indent {
     text-indent: 10%;
     font-size: 18px;
     text-align: justify;
@@ -271,6 +276,7 @@ nav a { font-size: 18px; }
 .destaque h2 {  font-size: 52px; }
 
 .destaque p { font-size: 32px; }
+
     
 .trabalho img {
     display: inline-block;
@@ -341,7 +347,12 @@ main {
 
 @media screen and (min-width: 1300px) {
 
-h2 { font-size: 32px; }
+h2 { font-size: 28px; }
+
+.siga {
+    width: 150px;
+    height: 150px;
+ }
 
 .trabalho img {     
             
@@ -362,6 +373,30 @@ h2 { font-size: 32px; }
 form { width: 80%; }
 
 }
+
+
+
+@media screen and (min-width: 1600px) {
+    h1 img {
+        width: 125px;
+        height: 125px;
+        display: flex;
+        margin: auto;   
+        margin-left: 5vw;   
+        
+}
+    
+    .limite {
+        max-width: 1600px;
+        margin: auto;
+}
+}
+
+ 
+
+        
+
+    
 
     
 
